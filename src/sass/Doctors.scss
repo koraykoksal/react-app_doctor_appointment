@@ -1,0 +1,28 @@
+@import "../sass/reset";
+@import "../sass/variables";
+
+
+.doctorSearch{
+
+    padding: 2rem;
+    //border: 1px solid black;
+
+    input{
+
+        width: 350px;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        font-size: 15px;
+    }
+
+    select{
+        width: 350px;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+    }
+}
+
+
+
+
+

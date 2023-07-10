@@ -5,7 +5,7 @@ export const Doctors = () => {
   return (
     <>
       
-      <div className='container m-auto text-center mt-5'>
+      <div className='container m-auto text-center mt-5 doctorSearch'>
         <div className='row'>
           
           <div className='col-sm-6 col-md-6'>
