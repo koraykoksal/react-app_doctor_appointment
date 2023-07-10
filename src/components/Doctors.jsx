@@ -1,7 +1,15 @@
 import React from 'react'
+import "../sass/Doctors.scss";
 
 export const Doctors = () => {
   return (
-    <div>Doctors</div>
+    <>
+      
+      
+      
+      <h1>Doctorss</h1>
+
+
+    </>
   )
 }
