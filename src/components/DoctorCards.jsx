@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useState } from 'react'
+import "../sass/Doctors.scss"
 export const DoctorCards = ({id,name,dep,img}) => {
 
     
@@ -7,7 +7,7 @@ export const DoctorCards = ({id,name,dep,img}) => {
   return (
     <div>
 
-        <div class="card">
+        <div class="card drCards">
             <img src={img} alt={name} />
         <div class="card-body">
             <h5 class="card-title">{name}</h5>

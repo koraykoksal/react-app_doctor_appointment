@@ -23,6 +23,34 @@
 }
 
 
+.doctors{
 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.drCards{
+
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover{
+
+        transition:all 0.3s;
+        transform: scale(1);
+        border: 1px solid red;
+        padding: 0.3rem;
+        opacity: 0.6;
+    }
+
+    img{
+
+        width: 250px;
+        height: 200px;
+    }
+}
 
 

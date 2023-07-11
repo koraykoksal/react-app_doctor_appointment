@@ -17,7 +17,7 @@ export const Header = () => {
           </div>
           
           <div className='col-sm-8 col-md-8 text-center m-auto'>
-            <h3>Hızlı Randevu Sistemi</h3>
+            <h3>Quick Appointment System</h3>
           </div>
 
           <div className='col-sm-2 col-md-2 text-center m-auto'>
