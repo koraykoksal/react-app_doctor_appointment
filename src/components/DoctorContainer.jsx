@@ -34,14 +34,14 @@ export const DoctorContainer = () => {
         <div className='row'>
           
           <div className='col-sm-6 col-md-6 p-4'>
-            <h5>Doktor Ara</h5>
-            <input type="text" placeholder='Doktor ara' onChange={handleChange} onKeyDown={handlePres}/>
+            <h5>Doctor Search</h5>
+            <input type="text" placeholder='Doctor Search' onChange={handleChange} onKeyDown={handlePres}/>
           </div>
 
           <div className='col-sm-6 col-md-6 p-4'>
-            <h5>Tıbbi Birim</h5>
+            <h5>Medical Units</h5>
             <select name="" id="">
-              <option value="">Tıbbi Birimler</option>
+              <option value="">Medical Units</option>
               {
                   doctorData.map((item,i)=>{
 
