@@ -1,5 +1,5 @@
 
-import { Doctors } from './components/Doctors';
+import { DoctorContainer } from './components/DoctorContainer';
 import { Header } from './components/Header';
 import "./sass/App.scss";
 
@@ -9,7 +9,7 @@ function App() {
 
     <div className="App">
       <Header/>
-      <Doctors/>
+      <DoctorContainer/>
     </div>
 
 
