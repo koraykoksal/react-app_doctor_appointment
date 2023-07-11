@@ -55,3 +55,26 @@
 }
 
 
+.mdl{
+
+    // display: none;
+    // background-color: red;
+    // width: 250px;
+    // height: 200px;
+    border-color: red;
+
+    img{
+        width: 250px;
+        height: 200px;
+        padding: 1rem;
+        margin: auto;
+    };
+
+    input{
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
