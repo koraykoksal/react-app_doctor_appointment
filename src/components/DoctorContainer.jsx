@@ -8,7 +8,7 @@ export const DoctorContainer = () => {
 
 
     const [search, setSearch] = useState("")
-    // const [drSelect, setdrSelect] = useState("")
+    const [unit, setUnit] = useState("")
 
     const handleChange=(e)=>{
         setSearch(e.target.value)
@@ -22,10 +22,11 @@ export const DoctorContainer = () => {
         
     }
 
-    // const handledrSelect=(e)=>{
-    //   setdrSelect(e.target.value)
-    //   console.log(drSelect);
-    // }
+    const handledrSelect=(e)=>{
+      setUnit(e.target.value)
+    }
+
+    console.log(unit);
 
   return (
     <>
@@ -40,7 +41,7 @@ export const DoctorContainer = () => {
 
           <div className='col-sm-6 col-md-6 p-4'>
             <h5>Medical Units</h5>
-            <select name="" id="">
+            <select name="" id="" onChange={handledrSelect}>
               <option value="">Medical Units</option>
               {
                   doctorData.map((item,i)=>{
@@ -57,12 +58,18 @@ export const DoctorContainer = () => {
 
         <div className='doctors'>
             {
-              doctorData.filter((item)=>(item.name.toLowerCase().includes(search.toLowerCase()))).map((item,i)=>(
+              // doctorData.filter((item)=>(item.name.toLowerCase().includes(search.toLowerCase()))).map((item,i)=>(
+
+              //   <DoctorCards key={i} {...item}/>
+                    
+              // ))
+              
+              doctorData.filter((item)=>(item.name.toLowerCase().includes(search.toLowerCase()))).filter((item)=>(item.dep.toLowerCase().includes(unit.toLowerCase()))).map((item,i)=>(
 
                 <DoctorCards key={i} {...item}/>
                     
               ))
-              
+
             }
         </div>
       </div>
