@@ -8,6 +8,7 @@ export const DoctorContainer = () => {
 
 
     const [search, setSearch] = useState("")
+    // const [drSelect, setdrSelect] = useState("")
 
     const handleChange=(e)=>{
         setSearch(e.target.value)
@@ -20,6 +21,11 @@ export const DoctorContainer = () => {
       }
         
     }
+
+    // const handledrSelect=(e)=>{
+    //   setdrSelect(e.target.value)
+    //   console.log(drSelect);
+    // }
 
   return (
     <>
@@ -54,6 +60,7 @@ export const DoctorContainer = () => {
                 <DoctorCards key={i} {...item}/>
                     
               ))
+              
             }
         </div>
       </div>
