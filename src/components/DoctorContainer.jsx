@@ -34,10 +34,12 @@ export const DoctorContainer = () => {
         <div className='row'>
           
           <div className='col-sm-6 col-md-6 p-4'>
+            <p>Doktor Ara</p>
             <input type="text" placeholder='Doktor ara' onChange={handleChange} onKeyDown={handlePres}/>
           </div>
 
           <div className='col-sm-6 col-md-6 p-4'>
+            <p>Tıbbi Birim</p>
             <select name="" id="">
               <option value="">Tıbbi Birimler</option>
               {
