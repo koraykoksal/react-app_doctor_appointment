@@ -14,7 +14,11 @@ export const DoctorContainer = () => {
     }
 
     const handlePres=(e)=>{
-
+      if(e.keyCode >= 48 && e.keyCode <= 57){
+        console.log(e.keyCode);
+        e.preventDefault()
+      }
+        
     }
 
   return (
@@ -24,7 +28,7 @@ export const DoctorContainer = () => {
         <div className='row'>
           
           <div className='col-sm-6 col-md-6 p-4'>
-            <input type="text" placeholder='Doktor ara' onChange={handleChange} />
+            <input type="text" placeholder='Doktor ara' onChange={handleChange} onKeyDown={handlePres}/>
           </div>
 
           <div className='col-sm-6 col-md-6 p-4'>
