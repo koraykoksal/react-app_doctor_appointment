@@ -31,7 +31,7 @@ export const DoctorContainer = () => {
   return (
     <>
       
-      <div className='container m-auto text-center mt-5 doctorSearch'>
+      <div className='container m-auto text-center mt-5 mb-5 doctorSearch'>
         <div className='row'>
           
           <div className='col-sm-6 col-md-6 p-4'>
