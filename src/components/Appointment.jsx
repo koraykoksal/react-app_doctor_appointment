@@ -15,7 +15,9 @@ export const Appointment = ({item}) => {
 
   const handleDelete=(e)=>{
 
-    console.log(e.target)
+    if(e.target.classList.value === "btn btn-outline-danger"){
+      e.target.closest(".container").remove()
+    }
 
   }
 
