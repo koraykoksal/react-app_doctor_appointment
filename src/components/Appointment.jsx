@@ -1,31 +1,41 @@
 import React from 'react'
+import "../sass/Appointment.scss"
 
-export const Appointment = () => {
+
+export const Appointment = ({item}) => {
+
   return (
-    <div>
+
+    <>
 
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
+        <h3 className='text-center text-danger'>Appointment List</h3>
+          <div class="card mb-5 mt-4">
+          <div class="card-body">
+
+            <div className='bd1'>
+
+              <div>
+              <h5 class="card-title text-danger">{item.patient}</h5>
+              </div>
+              <div>
+              <h5 className='text-secondary'>{item.drname}</h5>
+              </div>
+              <div>
+              <h5 className='text-secondary'>{item.day}</h5>
+              </div>
+              
+              
             </div>
-            <div class="modal-body">
-                ...
+
+            <div className='bd2'>
+              <button>Delete</button>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-            </div>
+            
+          </div>
         </div>
-        </div>
 
+    </>
 
-    </div>
   )
 }

@@ -1,26 +1,40 @@
+// export const appointmentData = [
+//   {
+//     id: 1,
+//     patient: "Barry Vermont",
+//     day: new Date(),
+//     consulted: true,
+//     doctor: "Dr. Hazel Valery",
+//   },
+//   {
+//     id: 2,
+//     patient: "Harry Coming",
+//     day: new Date(),
+//     consulted: false,
+//     doctor: "Dr. Jessica White",
+//   },
+//   {
+//     id: 3,
+//     patient: "Aaron Black",
+//     day: new Date(),
+//     consulted: true,
+//     doctor: "Dr. Jasmine Carpanter",
+//   },
+// ]
+
+
+
 export const appointmentData = [
-  {
-    id: 1,
-    patient: "Barry Vermont",
-    day: new Date(),
-    consulted: true,
-    doctor: "Dr. Hazel Valery",
-  },
-  {
-    id: 2,
-    patient: "Harry Coming",
-    day: new Date(),
-    consulted: false,
-    doctor: "Dr. Jessica White",
-  },
-  {
-    id: 3,
-    patient: "Aaron Black",
-    day: new Date(),
-    consulted: true,
-    doctor: "Dr. Jasmine Carpanter",
-  },
+  // {
+  //   id: 1,
+  //   patient: "Barry Vermont",
+  //   day: new Date(),
+  //   consulted: true,
+  //   doctor: "Dr. Hazel Valery",
+  // },
 ]
+
+
 
 export const doctorData = [
   {

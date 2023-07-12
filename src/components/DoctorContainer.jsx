@@ -3,10 +3,11 @@ import "../sass/Doctors.scss";
 import { useState } from 'react';
 import {doctorData} from "../assets/data"
 import { DoctorCards } from './DoctorCards';
+import { Appointment } from './Appointment'
 
 export const DoctorContainer = () => {
 
-
+    const [app, setApp] = useState([])
     const [search, setSearch] = useState("")
     const [unit, setUnit] = useState("")
 
@@ -26,7 +27,6 @@ export const DoctorContainer = () => {
       setUnit(e.target.value)
     }
 
-    console.log(unit);
 
   return (
     <>
@@ -58,15 +58,10 @@ export const DoctorContainer = () => {
 
         <div className='doctors'>
             {
-              // doctorData.filter((item)=>(item.name.toLowerCase().includes(search.toLowerCase()))).map((item,i)=>(
-
-              //   <DoctorCards key={i} {...item}/>
-                    
-              // ))
               
               doctorData.filter((item)=>(item.name.toLowerCase().includes(search.toLowerCase()))).filter((item)=>(item.dep.toLowerCase().includes(unit.toLowerCase()))).map((item,i)=>(
 
-                <DoctorCards key={i} {...item}/>
+                <DoctorCards key={i} {...item} app={app} setApp={setApp}/>
                     
               ))
 
@@ -74,6 +69,12 @@ export const DoctorContainer = () => {
         </div>
       </div>
       
+      <div className="container">
+            
+            {app.map((item) => (
+            <Appointment item={item}/>
+            ))}
+        </div>
 
 
     </>
