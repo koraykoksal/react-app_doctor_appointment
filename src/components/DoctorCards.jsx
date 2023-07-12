@@ -47,26 +47,16 @@ export const DoctorCards = ({id,name,dep,img,app,setApp}) => {
 
         <div onClick={handleShowModal} >
 
-            {/* <div class="card drCards text-center m-auto">
-
-                <img src={img} alt={name} />
-
-                <div class="card-body">
-                    <h5 class="card-title">{name}</h5>
-                </div>
-
-                <div className='card-title'>
-                <p class="card-text">{dep}</p>
-                </div>
-
-            </div> */}
-
             <div class="card drCards m-auto text-center">
+            
             <img src={img} alt={name} />
 
             <div class="card-body">
-                <h5 class="card-title">{name}</h5>
+                <div className='text-center m-auto'>
+                <h6 class="card-title">{name}</h6>
                 <p class="card-title">{dep}</p>
+                </div>
+                
             </div>
             </div>
 

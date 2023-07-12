@@ -70,7 +70,7 @@ export const DoctorContainer = () => {
       </div>
       
       <div className="container">
-            
+      <h3 className='text-center text-danger mb-2'>Appointment List</h3>
             {app.map((item) => (
             <Appointment item={item}/>
             ))}
