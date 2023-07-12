@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export const Appointment = ({item}) => {
 
-  const [showImage, setShowImage] = useState(true)
+  const [showImage, setShowImage] = useState(false)
 
   const handleClick=()=>{
       
@@ -16,7 +16,8 @@ export const Appointment = ({item}) => {
   const handleDelete=(e)=>{
 
     if(e.target.classList.value === "btn btn-outline-danger"){
-      e.target.closest(".container").remove()
+      e.target.closest(".cardTOP").remove()
+      //e.target.parentElement.parentElement.remove()
     }
 
   }
@@ -25,6 +26,9 @@ export const Appointment = ({item}) => {
 
     <>
 
+      <div className='cardTOP'>
+
+      
       {
         showImage?(
 
@@ -59,39 +63,34 @@ export const Appointment = ({item}) => {
 
         ):(
 
-          <div class="card mb-5 mt-4 appCard" onClick={handleClick}>
+        <div class="card mb-5 mt-4 appCard" onClick={handleClick}>
 
-          <div class="card-body appCardBody">
+        <div class="card-body appCardBody">
 
-            <div className='bd1'>
-
-              <div>
-              <h5 class="card-title text-secondary">Patient Name : {item.patient}</h5>
-              </div>
-              <div>
-              <h5 className='text-secondary'>Dr Name : {item.drname}</h5>
-              </div>
-              <div>
-              <h5 className='text-secondary'>Time : {item.day}</h5>
-              </div>
-            </div>
+          <div className='bd1'>
 
             <div>
-            <button type="button" class="btn btn-info" onClick={handleClick}>Consulted</button>
+            <h5 class="card-title text-secondary">Patient Name : {item.patient}</h5>
             </div>
-
-            <div className='bd2'>
-            <button type="button" class="btn btn-outline-danger" onClick={handleDelete}>Del</button>
+            <div>
+            <h5 className='text-secondary'>Dr Name : {item.drname}</h5>
             </div>
-            
+            <div>
+            <h5 className='text-secondary'>Time : {item.day}</h5>
+            </div>
           </div>
-        </div>
 
+          <div className='bd2'>
+          <button type="button" class="btn btn-outline-danger" onClick={handleDelete}>Del</button>
+          </div>
+          
+        </div>
+      </div>
 
 
         )
       }
-
+      </div>
 
     </>
   )
