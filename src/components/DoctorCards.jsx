@@ -71,9 +71,9 @@ export const DoctorCards = ({id,name,dep,img,app,setApp}) => {
 
                     <h4>{name}</h4>
                     <img src={img} alt={name} />
-                    <input type="text" placeholder='Patient Name' name='patient' value={inputs.name}  onChange={handleChange} />
-                    <input type="datetime-local" onChange={handleChange} name='day' value={inputs.day || ""} />
-                    
+                    <input type="text" placeholder='Patient Name' name='patient' value={inputs.name}  onChange={handleChange} required />
+                    <input type="datetime-local" onChange={handleChange} name='day' value={inputs.day || ""} required />
+                   
                 </div>
 
             </Modal.Body>
